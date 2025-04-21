@@ -12,18 +12,18 @@ namespace Consoledocumation
         static void Main(string[] args)
         {
 
-            Console.WriteLine("Welcome to Temperature Converter");
+               Console.WriteLine("Welcome to Temperature Converter");
 
-            double Celdegree, fDegree;//input the celcius, and farhehaingt
+            double Celdegree, fDegree;
 
             Console.WriteLine("Enter the temperature:");
 
-            fDegree = Convert.ToDouble(Console.ReadLine());
+            fDegree = Convert.ToDouble(Console.ReadLine());//string varialbe for the fDegree
 
-            Celdegree = 59 * (fDegree - 32);//celcius equation
+            Celdegree = 59 * (fDegree - 32);
 
-            Console.WriteLine(+fDegree + " F: is equivalent to: " + Celdegree + " C");//output
-        }
+            Console.WriteLine(+fDegree + " F: is equivalent to: " + Celdegree + " C");//Print output of the fDegree to Celderee
+            }
 
     }
 
