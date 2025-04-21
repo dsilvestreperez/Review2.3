@@ -1,13 +1,31 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Welcome to Temperature Converter");
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Xml;
 
-double Celdegree, fDegree;
+namespace Consoledocumation
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
 
-Console.WriteLine("Enter the temperature:");
+            Console.WriteLine("Welcome to Temperature Converter");
 
-fDegree = Convert.ToDouble(Console.ReadLine());
+            double Celdegree, fDegree;//input the celcius, and farhehaingt
 
-Celdegree = 59 * (fDegree - 32);
+            Console.WriteLine("Enter the temperature:");
 
-Console.WriteLine(+fDegree + " F: is equivalent to:" + Celdegree + " C");
+            fDegree = Convert.ToDouble(Console.ReadLine());
+
+            Celdegree = 59 * (fDegree - 32);//celcius equation
+
+            Console.WriteLine(+fDegree + " F: is equivalent to: " + Celdegree + " C");//output
+        }
+
+    }
+
+}
 
