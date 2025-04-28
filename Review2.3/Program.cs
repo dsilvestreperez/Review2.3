@@ -16,13 +16,13 @@ namespace Consoledocumation
 
             double Celdegree, fDegree;
 
-            Console.WriteLine("Enter the temperature:");
+            Console.WriteLine("Enter the temperature:");//puting the temperature of the weather
 
-            fDegree = Convert.ToDouble(Console.ReadLine());//string varialbe for the fDegree
+            fDegree = Convert.ToDouble(Console.ReadLine());//input the tempersture for the weather in Fahranhite
 
-            Celdegree = 59 * (fDegree - 32);
+            Celdegree = 59 * (fDegree - 32);//the equation for changeing fahranhite to Celsius
 
-            Console.WriteLine(+fDegree + " F: is equivalent to: " + Celdegree + " C");//Print output of the fDegree to Celderee
+            Console.WriteLine(+fDegree + " F: is equivalent to: " + Celdegree + " C");//Display the change from Fehranite to Celsius
             }
 
     }
